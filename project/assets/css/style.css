@@ -1,0 +1,1401 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+/* page login */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+   
+}
+a{
+   text-decoration: none; 
+}
+label{
+    direction: rtl;
+}
+input{
+    width:  283px;
+    border-radius: 8px;
+    padding-right: 5px;
+    direction: rtl;
+    height: 32px;
+    border: 2px solid #B0B0B0;
+}
+form p{
+    color:red;
+    display:none;
+}
+/* body */
+html,body{
+  background-image: url(../img/backgroung.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  
+}
+
+.page{
+    display: flex;
+    min-height: 100%;
+    
+   
+}
+/* login page-part-left */
+.part-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px rgba(0, 0, 0, 0.228) solid;
+    width: 50%;    
+}
+.part-left img{
+    width: 331px;
+    height: 170px;
+}
+
+/* login page-part-right */
+.part-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.part-right-titel{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.part-right-titel-img-icon img{
+    width: 2em;
+    height: 2em;
+}
+
+.part-right-form-email{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    position: relative;
+    padding-bottom: 15px;
+    
+}
+.part-right-form-email i{
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+}
+.part-right-form-email-label{
+   display: flex;
+   position: relative;
+   width: 100%;
+   direction: rtl;
+}
+.part-right-form-email-label a{
+    position: absolute;
+    left: -45px;
+     
+}
+.part-right-form-email img{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+
+.part-right-form-password{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    position: relative;
+}
+.part-right-form-password i{
+     position: absolute;
+    left: 10px;
+    top: 68%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+}
+.part-right-form-password-label{
+   display: flex;
+   position: relative;
+   width: 100%;
+   direction: rtl;
+}
+.part-right-form-password-label a{
+    position: absolute;
+    left: -45px;
+     
+}
+.part-right-form-password img{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.part-right-button{
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+.part-right-button-icon{
+    position: absolute;
+    left: -50px;
+}
+.part-right-button button{
+    width: 283px;
+    height: 32px;
+    border-radius:1em ;
+    background-color: #624ECC;
+    border: 0;
+    color: white;
+    
+}
+.part-right-button img{
+     width: 1.2em;
+    height: 1.2em;
+}
+.part-right-forgot-password a span{
+    color: rgb(0, 0, 0);
+    
+    font-weight: bold;
+
+}
+.part-right-forgot-password img{
+    width: 1.2em;
+    height: 1.2em;
+}
+.part-right-create-account{
+    position: relative;
+}
+.part-right-create-account-icon{
+    position: absolute;
+    left: -80px;
+}
+
+.part-right-create-account img{
+      width: 1.2em;
+    height: 1.2em;
+}
+
+.part-right-create-account span{
+    color: rgb(0, 0, 0);
+    font-size:15px;
+    
+    
+}
+.part-right-create-account a{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* انشاء حساب */
+/* creatr-account-page-part */
+/* creatr-account-page-right */
+.creatr-account-page-part-right-titel{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.creatr-account-page-part-right-titel-img-icon img{
+     width: 2em;
+    height: 2em;
+}
+
+.creatr-account-page-part-right-form-name{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    position: relative;
+    padding-bottom: 15px;
+    
+}
+.creatr-account-page-part-right-form-name i{
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+}
+.creatr-account-page-part-right-form-name-label{
+   display: flex;
+   position: relative;
+   width: 100%;
+   direction: rtl;
+}
+.creatr-account-page-part-right-form-name-label a{
+    position: absolute;
+    left: -45px;
+     
+}
+.creatr-account-page-part-right-form-name img{
+    width: 1.2em;
+    height: 1.2em;
+}
+.creatr-account-page-part-right-form-email{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    position: relative;
+    padding-bottom: 15px;
+    
+    
+}
+.creatr-account-page-part-right-form-email i{
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+}
+.creatr-account-page-part-right-form-email-label{
+   display: flex;
+   position: relative;
+   width: 100%;
+   direction: rtl;
+}
+.creatr-account-page-part-right-form-email-label a{
+    position: absolute;
+    left: -45px;
+     
+}
+.creatr-account-page-part-right-form-email img{
+    width: 1.2em;
+    height: 1.2em;
+}
+.creatr-account-page-part-right-form-password{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.creatr-account-page-part-right-form-password i{
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+}
+.creatr-account-page-part-right-form-password-label{
+   display: flex;
+   position: relative;
+   width: 100%;
+   direction: rtl;
+}
+.creatr-account-page-part-right-form-password-label a{
+    position: absolute;
+    left: -45px;
+     
+}
+.creatr-account-page-part-right-form-password img{
+    width: 1.2em;
+    height: 1.2em;
+}
+/* creatr-account-page-part-right-form-radio */
+.creatr-account-page-part-right-form-radio-titel span{
+ display: flex;
+   position: relative;
+   width: 100%;
+   direction: rtl;
+}
+.creatr-account-page-part-right-form-radio-titel a {
+        position: absolute;
+    left: -45px;
+}
+.creatr-account-page-part-right-form-radio-titel img{
+     width: 1.2em;
+    height: 1.2em;
+}
+
+.creatr-account-page-radio{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* عشان اخفي الداىره احلا مساء عليك يا عم غريب */
+.creatr-account-page-radio input[type="radio"] {
+  display: none;
+}
+
+/* الداىره احلا مساء عليك يا عم غريب */
+.radio-circle {
+  width: 110px;
+  height: 110px;
+  border: 3px solid #B0B0B0;
+  border-radius: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: white;
+}
+
+/* الصورةالي ف الداىره احلا مساء عليك يا عم غريب */
+.radio-circle img {
+  width: 30px;
+  height: 30px;
+}
+
+/* لما بختار احلا مساء عليك يا عم غريب */
+.creatr-account-page-radio input[type="radio"]:checked + .radio-circle {
+  border-color: #4a90e2;
+  background: #e5f1ff;
+  transform: scale(1.05);
+}
+
+.creatr-account-page-part-right-button{
+   margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+.creatr-account-page-part-right-button-icon{
+    position: absolute;
+    left: -50px;
+}
+.creatr-account-page-part-right-button button{
+    width: 283px;
+    height: 32px;
+    border-radius:1em ;
+    background-color: #624ECC;
+    border: 0;
+    color: white;
+    
+}
+.creatr-account-page-part-right-button img{
+     width: 1.2em;
+    height: 1.2em;
+}
+.creatr-account-page-login{
+    position: relative;
+}
+.creatr-account-page-login-icon{
+    position: absolute;
+    left: -80px;
+}
+
+.creatr-account-page-login img{
+      width: 1.2em;
+    height: 1.2em;
+}
+
+.creatr-account-page-login span{
+    color: rgb(0, 0, 0);
+    font-size:15px;
+    
+    
+}
+.creatr-account-page-login a{
+    color: black;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+/* صفحه نسيت الباسورد */
+
+/* الجنب اليمين من الصفحه */
+.forgot-part-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* عنوان الجنب اليمين */
+.forgot-part-right-titel{
+    display: flex;
+    gap: 10px;
+}
+.forgot-part-right-titel-icon img {
+       width: 2em;
+       height: 2em;
+}
+/* الفورم */
+.forgot-part-right-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.forgot-part-right-form label{
+    position: relative;
+    width: 100%;
+}
+.forgot-part-right-form-icon{
+    position: absolute;
+    left: -45px;
+    top: 0;
+}
+.forgot-part-right-form-icon img{
+    width: 1.2em;
+    height: 1.2em;
+}
+.forgot-part-right-form i{
+    position: absolute;
+    left: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+}
+/* الزرار */
+.forgot-part-right-buttom{
+   margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+.forgot-part-right-buttom-icon{
+    position: absolute;
+    left: -50px;
+}
+.forgot-part-right-buttom button{
+    width: 283px;
+    height: 32px;
+    border-radius:8px ;
+    background-color: #624ECC;
+    border: 0;
+    color: white;
+    
+}
+.forgot-part-right-buttom img{
+     width: 1.2em;
+    height: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* صفحه اثبات الهويه */
+
+.proof-part-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+/* عنوان الجنب اليمين */
+.proof-part-right-titel{
+    display: flex;
+    gap: 10px;
+}
+.proof-part-right-titel-icon img {
+       width: 2em;
+       height: 2em;
+}
+/* عنوان ال otp */
+.proof-part-right-div{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.proof-part-right-div label{
+align-self:flex-start;
+text-align: right;
+width: 100%;
+margin-bottom: 10px;
+}
+.proof-part-right-div-icon{
+position: absolute;
+left: -55px;
+top: 0;
+}
+.proof-part-right-div-icon img{
+    width: 1.2em;
+    height: 1.2em;
+}
+/* رمز otp */
+.proof-part-right-otp- {
+  display: flex;
+  gap: 10px;
+  direction: rtl;
+}
+
+.otp-input {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: #d9d9d9;
+  font-size: 24px;
+  text-align: center;
+  outline: none;
+  transition: 0.2s;
+}
+
+.otp-input:focus {
+  border-color: #4a3cff; 
+  background-color: #ffffff;
+}
+/* ارسال الكود */
+
+.proof-part-right-send{
+    direction: rtl;
+    position: relative;
+}
+.proof-part-right-send-icon{
+position: absolute;
+left: -85px;
+top: 0;
+}
+.proof-part-right-send-icon img{
+    width: 1.2em;
+    height: 1.2em;
+}
+/* تعديل الحساب */
+.proof-part-right-edite{
+    text-align: center;
+}
+.proof-part-right-edite a{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* الزرار */
+.proof-part-right-buttom{
+   
+    position: relative;
+    text-align: center;
+}
+.proof-part-right-buttom-icon{
+    position: absolute;
+    left: -65px;
+}
+.proof-part-right-buttom button{
+    width: 283px;
+    height: 32px;
+    border-radius:8px;
+    background-color: #624ECC;
+    border: 0;
+    color: white;
+    
+}
+.proof-part-right-buttom img{
+     width: 1.2em;
+    height: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* اعاده تعين كلمه السر*/
+
+/* الجنب اليمين من الصفحه */
+.reset-password-part-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* عنوان الجنب اليمين */
+.reset-password-part-right-titel{
+    display: flex;
+    gap: 10px;
+}
+.reset-password-part-right-titel-icon img {
+       width: 2em;
+       height: 2em;
+}
+/* الفورم */
+.form-input-password,.form-reset-input-password{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 10px;
+    
+}
+.form-input-password i{
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+    
+}
+.form-reset-input-password i{
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #888;
+
+}
+.form-input-password,.form-reset-input-password label{
+    position: relative;
+}
+.form-input-password-icon{
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+.form-input-password-icon img{
+    width: 1.2em;
+    height: 1.2em;
+}
+.form-reset-input-password-icon{
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+.form-reset-input-password-icon img{
+     width: 1.2em;
+    height: 1.2em;
+}
+/* الزرار */
+.reset-password-part-right-buttem{
+   
+    position: relative;
+    text-align: center;
+}
+.reset-password-part-right-buttem-icon{
+    position: absolute;
+    left: -50px;
+}
+.reset-password-part-right-buttem button{
+    width: 283px;
+    height: 32px;
+    border-radius:8px;
+    background-color: #624ECC;
+    border: 0;
+    color: white;
+    
+}
+.reset-password-part-right-buttem img{
+     width: 1.2em;
+    height: 1.2em;
+}
+
+/* المودل الي بيظهر لما ااكد */
+.modal {
+    display: none; 
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-box {
+    background: #ffffff;
+    padding: 30px;
+    width: 350px;
+    height: 265px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
+.modal-box .icon img {
+    width: 115px;
+    height: 121px;
+    
+}
+
+.modal-box h2 {
+    margin-top: 10px;
+    direction: rtl;
+}
+.modal-box p {
+    margin-top: 10px;
+    direction: rtl;
+}
+.modal-icon{
+    padding-top:10px ;
+}
+.modal-icon img{
+width: 2em;
+height: 2em;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* الصفحه الرئسية */
+/* السيدناف يا عم غريب */
+.sidenav {
+  min-height: 100vh;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  /* padding-top: 20px; */
+  float: right;
+  direction: rtl;
+  z-index: 999999999;
+  font-size: 5px;
+  border-left: 2px solid rgba(0, 0, 0, 0.277);
+  overflow-y: auto;
+}
+.sidenav-logo{
+text-align: center;
+padding: 20px;
+overflow: hidden;
+}
+.sidenav-logo img{
+ width: 110px;
+ height: 34px;
+ 
+}
+.sidenav-a span{
+    font-size: 12px;
+}
+.sidenav-a a{
+    padding-right: 5px;
+}
+.sidenav-a img{
+    width: 15px;
+    height: 15px;
+     object-fit: contain; /* يمنع الصورة إنها تتشوه */
+    display: block;
+}
+.sidenav a {
+  text-decoration: none;
+  color: #624ECC;
+  display: flex;
+  padding-bottom: 12px;
+  align-items: center;
+  gap: 10px;
+ 
+}
+.sidenav a:hover {
+ 
+  background-color: #634ecc41;
+  border-left: 5px #624ECC solid;
+}
+/* محتوي الصفحه */
+.main {
+  min-height: 100%;
+  direction: rtl;
+  margin-right: 150px; 
+  font-size: 28px; 
+  color: rgb(208, 108, 13);
+  /* overflow-y: auto; */
+  /* padding: 20px; */
+
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+/* الهيدر */
+.nav-header{
+  background-color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+}
+.nav-porofile{
+  padding-left: 10px;
+  padding-top: 5px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-porofile p{
+  font-size: 20px;
+}
+.nav-porofile img{ 
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+} 
+
+.nav-search {
+   position: relative;
+}
+.nav-search form{
+    padding-right: 20px;
+}
+.nav-search input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding-right: 5px;
+    direction: rtl;
+}
+.nav-search img{
+    width: 0.8em;
+    height: 0.8em;
+}
+.nav-search a{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+/* تقصيمه الصفحه */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  
+}
+.box-1 {
+  background-color: #624ECC;
+  grid-column:1  / span 4;
+  grid-row: 1 / span 1;
+  height: 150px; 
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 10px;
+  border: 4px solid white;
+}
+.box-1 span{
+    color: white;
+    font-weight: 400;
+}
+.box-1 img{
+  width: 50px;
+  height: 41px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.box-2 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  height: 150px; 
+  border-radius: 8px;
+  background-color: #624ECC;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ border: 4px solid white;
+ justify-content: center;
+}
+.box-2 span{
+    color: white;
+    font-weight: 400;
+}
+.box-2 img{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.box-3 {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+  height: 150px; 
+  border-radius: 8px;
+  background-color: #624ECC;
+   display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 10px;
+  border: 4px solid white;
+}
+.box-3 span{
+    color: white;
+    font-weight: 400;
+}
+.box-3 img{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.box-4 { 
+  border: 4px solid white;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+  height: 150px; 
+  border-radius: 8px;
+  background-color: #624ECC;
+   display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 10px;
+}
+.box-4 span{
+    color: white;
+    font-weight: 400;
+}
+.box-4 img{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.box-5 {
+     border: 4px solid white;
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 1;
+  height: 150px; 
+  border-radius: 8px;
+  background-color: #624ECC;
+   display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 10px;
+}
+.box-5 span{
+    color: white;
+    font-weight: 400;
+}
+.box-5 img{
+  width: 33px;
+  height: 41px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.box-6 {
+     border: 4px solid white;
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+  height: 15    0px; 
+  border-radius: 8px;
+  background-color: #624ECC;
+   display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 10px;
+}
+.box-6 span{
+    color: white;
+    font-weight: 400;
+}
+.box-6 img{
+  width: 108px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* صفحه تسجيل الصوت */
+  .main-new{
+  min-height: 100vh;
+  direction: rtl;
+  margin-right: 150px; 
+  font-size: 28px; 
+  color: rgb(0, 0, 0);
+  /* overflow-y: auto; */
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+/* الهيدر */
+ .main-new-header{
+    width: 100%;
+    display: flex;
+    direction: ltr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+
+ .main-new-header img{
+    width: 1.2em;
+    height: 1.2em;
+ }
+.main-new-header button{
+    position: absolute;
+    left: 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #00000050;
+    border: 0 solid rgba(0, 0, 0, 0);
+    direction: rtl;
+    color: white;
+    
+ }
+ .main-new-header a{
+    position: absolute;
+    right: 30px;
+
+ }
+ /* باقيت الصفحه */
+ .main-recording-contant{
+    margin-top: 20px;
+ }
+ .main-recording-contant-record-audio{
+    background-color: white;
+    height: 150px;
+    border-radius: 8px;
+    text-align: center;
+ }
+ .main-recording-contant-record-audio img{
+    padding-top: 20px;
+    width: 55px;
+    opacity: 0.85;
+ }
+ /* تحدد اسم الصوت */
+.form-name-audio{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.form-name-audio a{
+    position: absolute;
+    left: 0;
+}
+.form-name-audio img{
+    width: 1.2em;
+    height: 1.2em;
+}
+/* تحديد مستوي الصوت */
+.form-range-audio{
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.form-range-audio a{
+    position: absolute;
+    left: 0;
+}
+.form-range-audio img{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.form-range-audio input {
+    width: 60%;
+    height: 6px;
+    border-radius: 5px;
+    margin-right: 200px;
+}
+/* الاهتزاز */
+.form-vibration{
+    position: relative;
+    margin-top: 10px;
+}
+.form-vibration img{
+    width:32px ;
+    height:24px ;
+}
+.form-vibration a{
+    position: absolute;
+    left: 0;
+}
+.form-vibration a img{
+    width:1.2em ;
+    height:1.2em ;
+}
+.switch {
+    position: relative;
+    width: 45px;
+    height: 22px;
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.switch input {
+    
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background: #ccc;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 2px;
+    bottom: 2px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+/* الافطار */
+.avtar{
+    margin-top: 50px;
+    position: absolute;
+    left: 0;
+    
+}
+.avtar img{
+    width: 250px;
+    height: 244px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* صفحه تحديد نوع المستخدم */
+/* الجزء الي فوق */
+.main-settings{
+    margin-top: 20px;
+    height: fit-content;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px;
+    border: 2px solid rgba(109, 109, 109, 0.588);
+
+}
+/* فتح الكاميرا */
+.open-camira{
+    position: relative;
+    margin-top: 10px;
+}
+.open-camira img{
+    width:40px ;
+    height:40px ;
+}
+.open-camira a{
+    position: absolute;
+    left: 0;
+}
+.open-camira a img{
+    width:1.2em ;
+    height:1.2em ;
+}
+/* فتح الميكرفون */
+.open-micrphone{
+    position: relative;
+    margin-top: 10px;
+}
+.open-micrphone img{
+    width:30px ;
+    height:30px ;
+}
+.open-micrphone a{
+    position: absolute;
+    left: 0;
+}
+.open-micrphone a img{
+    width:1.2em ;
+    height:1.2em ;
+}
+/* نوع المستخدم */
+.main-user-type-radio{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+.main-user-type-titel{
+    margin-top: 15px;
+}
+.main-user-type-titel span{
+ display: flex;
+   position: relative;
+   width: 100%;
+   direction: rtl;
+}
+.main-user-type-titel a {
+    position: absolute;
+    left: 0;
+}
+.main-user-type-titel img{
+     width: 1.2em;
+    height: 1.2em;
+}
+
+/* عشان اخفي الداىره احلا مساء عليك يا عم غريب */
+.main-user-type-radio input[type="radio"] {
+  display: none;
+}
+
+/* الداىره احلا مساء عليك يا عم غريب */
+.main-user-type-radio-circle {
+  width: 290px;
+  height: 150px;
+  border: 3px solid #B0B0B0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: white;
+}
+
+/* الصورةالي ف الداىره احلا مساء عليك يا عم غريب */
+.main-user-type-radio-circle img {
+  width: 30px;
+  height: 30px;
+}
+
+/* لما بختار احلا مساء عليك يا عم غريب */
+.main-user-type-radio input[type="radio"]:checked + .main-user-type-radio-circle {
+  border-color: #4a90e2;
+  background: #e5f1ff;
+  transform: scale(1.05);
+}
+/* الزرار */
+.main-buottm{
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+.main-buottm button{
+    background-color:#624ECC ;
+    width: 500px;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.173);
+}
+.main-buottm a{
+    position: absolute;
+    left: 0;
+}
+.main-buottm img{
+    width: 1.2em;
+    height: 1.2em;
+}
+ 
+    
+
+
+
+
+
+
+
