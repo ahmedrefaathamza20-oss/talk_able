@@ -861,6 +861,7 @@ overflow: hidden;
 }
 /* محتوي الصفحه */
 .main {
+
   min-height: 100%;
   direction: rtl;
   margin-right: 150px; 
@@ -875,6 +876,28 @@ overflow: hidden;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } */
+=======
+  
+  direction: rtl;
+  margin-right: 150px; 
+  width: calc(100% - 152px);
+  height: 100vh;
+  font-size: 28px; 
+  color: rgb(208, 108, 13);
+  /* overflow-y: auto; */
+  /* padding: 20px; 
+    width: calc(100% - 152px);
+    height: 100vh;
+  
+  */
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+>>>>>>> 6406596 (upload project with git lfs)
 /* الهيدر */
 .nav-header{
   background-color: white;
@@ -1098,10 +1121,18 @@ overflow: hidden;
  .main-new-header{
     width: 100%;
     display: flex;
+<<<<<<< HEAD
     direction: ltr;
     justify-content: center;
     align-items: center;
     position: relative;
+=======
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr;
+    position: relative;
+    
+>>>>>>> 6406596 (upload project with git lfs)
  }
 
  .main-new-header img{
@@ -1109,8 +1140,11 @@ overflow: hidden;
     height: 1.2em;
  }
 .main-new-header button{
+<<<<<<< HEAD
     position: absolute;
     left: 0;
+=======
+>>>>>>> 6406596 (upload project with git lfs)
     width: 120px;
     height: 40px;
     border-radius: 8px;
@@ -1120,10 +1154,19 @@ overflow: hidden;
     color: white;
     
  }
+<<<<<<< HEAD
  .main-new-header a{
     position: absolute;
     right: 30px;
 
+=======
+ .meeting-icon{
+    position: absolute;
+    right: 125px;
+ }
+ .ending-but {
+    color: rgb(255, 255, 255);
+>>>>>>> 6406596 (upload project with git lfs)
  }
  /* باقيت الصفحه */
  .main-recording-contant{
@@ -1390,6 +1433,10 @@ input:checked + .slider:before {
     width: 1.2em;
     height: 1.2em;
 }
+
+
+
+>>>>>>> 6406596 (upload project with git lfs)
  
     
 
@@ -1398,4 +1445,682 @@ input:checked + .slider:before {
 
 
 
+/* صفحه الميتنج من الصم وبكم */
 
+
+
+/* ===== Upload Cards ===== */
+.upload-section {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+.card {
+    flex: 1;
+    height: 180px;
+    /* background: repeating-conic-gradient(
+        #eee 0% 25%,
+        #fff 0% 50%
+    ) 50% / 20px 20px; */
+     background-image:url(../img/ba-wandb.png) ;
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: local;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card span img{
+    width: 66.5px;
+    height: 60px;
+}
+
+
+/* ===== Avatar ===== */
+.avatar-container {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 90px;
+    gap: 5px;
+}
+.avatar-circle img {
+    width: 175px;
+    height: 175px;
+}
+
+/* ===== Bottom Navigation ===== */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 65%;
+    background: #222;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+
+.bottom-nav span img {
+    width: 65px;
+    height: 65px;
+}
+
+
+
+
+/* صفحة اجتماع الشخص الطبيعي */
+
+.show-tran{
+    width: 305px;
+    height: 121px;
+    background-color: #624ECC;
+    border-radius: 8px;
+    position: relative;
+}
+.show-tran-text p{
+    padding-top: 5px;
+    direction: rtl;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+.show-tran-text img{
+    width: 62px;
+    height: 47px;
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    padding-bottom: 15px;
+    
+}
+
+
+
+
+
+
+
+
+/* صفحة اختيار نوع الترجمه */
+.containar{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+    .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+.arrow img{
+    width: 128px;
+    height: 72px;
+}
+
+ .box {
+            background: #fff;
+            border-radius: 12px;
+            width: 250px;
+            height: 142px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            
+        }
+  .box img{
+    width: 124px;
+    height: 124px;
+ }       
+.bar-titel{
+    background-color:#624ECC ;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    
+}
+.bar-titel p{
+    color:white;
+}
+.bar-titel a{
+    position: absolute;
+   left: 0;
+    top: 0%;
+}
+.bar-titel a img{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* صفحة الترجمة من الاشاره الى الكلام */
+.main-rtos{
+    width: 100%;
+     min-height: 100%;
+    direction: rtl;
+    margin-right: 152px; 
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-rtos-video img{
+    width: 650px;
+    height: 300px;
+}
+.main-rtos-translation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+ .main-rtos-translation-show-tran{
+      width: 305px;
+    height: 121px;
+    background-color: #624ECC;
+    border-radius: 8px;
+    position: relative;
+}
+.main-rtos-translation-show-tran p{
+    padding-top: 5px;
+    direction: rtl;
+    padding-right: 5px;
+    color: white;
+    font-size: small;
+}
+.main-rtos-translation-show-tran img{
+    width: 85px;
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 15px;
+    padding-left: 5px;
+} 
+.main-rtos-translation-avtar img{
+    width: 175px;
+    height: 175px;
+}
+
+
+
+
+
+
+
+ /* width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    resize: none;
+    border: 1px solid #ccc;
+    padding-right: 12px;
+    padding-top: 12px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    outline: none; */
+
+/* صفحة الترجمه من الكلام الى الاشاره */
+  .main-rtos-translation-stog textarea{
+    /* width: 625px;
+    height: 160px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    position: relative;
+     resize: none;
+     border: 1px solid #ccc;
+     padding-right: 12px;
+    padding-top: 12px */
+     position: relative;
+  }
+  .main-rtos-translation-stog textarea{
+    width: 625px;
+    height: 160px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    position: relative;
+     resize: none;
+     border: 1px solid #ccc;
+     padding-right: 12px;
+    padding-top: 12px
+  }
+   .main-rtos-translation-stog p{
+    margin-right: 10px;
+    margin-top: 10px;
+   }
+.main-rtos-translation-stog img{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    padding: 5px;
+  }
+  .main-rtos-button button{
+    width: 400px;
+    height: 30px;
+    background-color: #4a3cff;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 20px;
+
+  }
+#avatar-container {
+ width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto; /* يوسّطها في الصفحة */
+}
+
+
+
+
+
+
+
+
+/* صفحة المحادثة */
+.chat-main{
+     margin-right: 152px;      /* مساحة السايدبار */
+    width: calc(100% - 152px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header{
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.back-btn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: #cccccc6d;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    direction: rtl;
+}
+
+
+
+
+
+/* جسم الشات */
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    background: #f0f0f0;
+    overflow-y: auto;
+}
+
+/* الرسالة */
+.msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 14px;
+}
+
+.msg.received {
+    justify-content: flex-end;
+}
+
+.msg.sent {
+    justify-content: flex-start;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+/* الفقاعة */
+.bubble {
+    max-width: 55%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.gray {
+    background: #ddd;
+    margin-right: 10px;
+}
+
+.blue {
+    background: #4a6cf7;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* يكتب */
+.typing {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* الإدخال */
+.chat-input {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.chat-input button {
+    padding: 10px 18px;
+    background: #4a6cf7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* صفحة الكورسات */
+.container-courses{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.item-courses {
+    position: relative;
+    flex: 0 0 calc((100% - (3 - 1) * 12px) / 3);
+    align-self: auto;
+    order: 0;
+    background-color: #624ECC;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.item-courses p{
+    position: absolute;
+    right: 15px;
+    color: white;
+}
+.item-courses img{
+    width: 120px;
+    height: 120px;
+}
+.item-courses h4{
+    color: white;
+    text-align: center;
+}
+.item-courses span{
+    color: rgba(255, 255, 255, 0.481);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+/* صفحة الكورسات 2*/
+.contant-courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+
+}
+.Watch-course{
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+.Course-description{
+   width: 100%;
+    position: relative;
+}
+.Course-description input{
+    
+    position: absolute;
+    bottom:-40px;
+    right: 30%;
+    
+}
+.Course-description p{
+    font-size:large ;
+}
+
+.Course-evaluation{
+     width: 100%;
+}
+.evaluates{
+    width: 100%;
+    height: 65px;
+    background-color: #ffffff00;
+    border-radius: 8px;
+    display: flex;
+    /* justify-content: cente; */
+    align-items: center;
+    gap: 10px;
+}
+.evaluates-img img{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+}
+.evaluates-data{
+    font-size: small; 
+}
+.evaluates-data-date p{
+    color: rgba(0, 0, 0, 0.258);
+}
+.evaluates-details-evaluates p{
+    font-size: large;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.star.active {
+  color: gold;
+}
+#rating-text{
+    font-size: small;
+}
+.Course-evaluation button{
+     width: 100%;
+    background-color: #624ECC;
+    border: 0 solid ;
+    border-radius: 8px;
+    height: 32px;
+    color: white;
+}
+      
+
+
+
+
+
+
+
+/* صفحه التقييم */
+.Add-review.rating{
+    position: absolute;
+}
+#rating{
+    position: relative;
+    right: 270px;
+    font-size: xx-large;
+}
+.Add-coment textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    resize: none;
+    border: 1px solid #ccc;
+    padding-right: 12px;
+    padding-top: 12px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    outline: none;
+
+}
+.Evaluation-content button{
+    width: 100%;
+    background-color: #624ECC;
+    border: 0 solid ;
+    border-radius: 8px;
+    height: 32px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* صفحه حسابي */
+.settings-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 120px;
+  margin: auto;
+}
+
+.avatar-wrapper img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.input-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-edit input {
+  flex: 1;
+  padding: 8px;
+}
+
+.edit {
+  cursor: pointer;
+}
+
+.actions button,
+.card button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+>>>>>>> 6406596 (upload project with git lfs)
