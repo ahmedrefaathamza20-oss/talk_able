@@ -872,32 +872,15 @@ overflow: hidden;
 
 }
 
-/* @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} */
-=======
-  
-  direction: rtl;
-  margin-right: 150px; 
-  width: calc(100% - 152px);
-  height: 100vh;
-  font-size: 28px; 
-  color: rgb(208, 108, 13);
-  /* overflow-y: auto; */
-  /* padding: 20px; 
-    width: calc(100% - 152px);
-    height: 100vh;
-  
-  */
 
-}
+
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
->>>>>>> 6406596 (upload project with git lfs)
+
 /* الهيدر */
 .nav-header{
   background-color: white;
@@ -920,11 +903,14 @@ overflow: hidden;
 }
 .nav-porofile p{
   font-size: 20px;
+  font-weight: 600;
 }
 .nav-porofile img{ 
   width: 40px;
   height: 40px;
   padding-left: 10px;
+  border-radius: 50%;
+  object-fit: cover;
 } 
 
 .nav-search {
@@ -1112,7 +1098,6 @@ overflow: hidden;
   margin-right: 150px; 
   font-size: 28px; 
   color: rgb(0, 0, 0);
-  /* overflow-y: auto; */
   width: 100%;
   padding: 20px;
   position: relative;
@@ -1121,18 +1106,12 @@ overflow: hidden;
  .main-new-header{
     width: 100%;
     display: flex;
-<<<<<<< HEAD
     direction: ltr;
     justify-content: center;
     align-items: center;
     position: relative;
-=======
-    justify-content: space-between;
-    align-items: center;
-    direction: ltr;
-    position: relative;
     
->>>>>>> 6406596 (upload project with git lfs)
+
  }
 
  .main-new-header img{
@@ -1140,11 +1119,9 @@ overflow: hidden;
     height: 1.2em;
  }
 .main-new-header button{
-<<<<<<< HEAD
+
     position: absolute;
     left: 0;
-=======
->>>>>>> 6406596 (upload project with git lfs)
     width: 120px;
     height: 40px;
     border-radius: 8px;
@@ -1153,20 +1130,31 @@ overflow: hidden;
     direction: rtl;
     color: white;
     
+    
  }
-<<<<<<< HEAD
+ .section-end-btn{
+    position: absolute;
+    right: 120px;
+    top: 15px;
+ }
+ .section-end-btn button{
+ 
+    background-color: red;
+}
+
  .main-new-header a{
     position: absolute;
-    right: 30px;
-
-=======
+    right: 0px;
+    top: 10px;
+}
+    
  .meeting-icon{
     position: absolute;
     right: 125px;
  }
  .ending-but {
     color: rgb(255, 255, 255);
->>>>>>> 6406596 (upload project with git lfs)
+
  }
  /* باقيت الصفحه */
  .main-recording-contant{
@@ -1434,11 +1422,11 @@ input:checked + .slider:before {
     height: 1.2em;
 }
 
-
-
->>>>>>> 6406596 (upload project with git lfs)
  
     
+
+
+
 
 
 
@@ -1459,10 +1447,7 @@ input:checked + .slider:before {
 .card {
     flex: 1;
     height: 180px;
-    /* background: repeating-conic-gradient(
-        #eee 0% 25%,
-        #fff 0% 50%
-    ) 50% / 20px 20px; */
+    
      background-image:url(../img/ba-wandb.png) ;
      background-position: center center;
      background-size: cover;
@@ -1498,8 +1483,8 @@ input:checked + .slider:before {
 .bottom-nav {
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left:0;
+    right: 120px;
     margin: auto;
     width: 65%;
     background: #222;
@@ -1550,7 +1535,6 @@ input:checked + .slider:before {
 
 
 
-
 /* صفحة اختيار نوع الترجمه */
 .containar{
     margin-top: 20px;
@@ -1586,19 +1570,24 @@ input:checked + .slider:before {
     height: 124px;
  }       
 .bar-titel{
-    background-color:#624ECC ;
-    border-radius: 8px;
-    text-align: center;
-    position: relative;
+   width: 100%;
     
 }
-.bar-titel p{
-    color:white;
+.bar-titel button{
+    width: 100%;
+    height: 40px;
+    color: white;
+     background-color:#624ECC ;
+    border-radius: 8px;
+    text-align: center;
+    position: relative
 }
+    
+
 .bar-titel a{
     position: absolute;
-   left: 0;
-    top: 0%;
+   left: 30px;
+    top: 48%;
 }
 .bar-titel a img{
     width: 1.2em;
@@ -1673,33 +1662,15 @@ input:checked + .slider:before {
 
 
 
- /* width: 100%;
-    height: 150px;
-    border-radius: 8px;
-    resize: none;
-    border: 1px solid #ccc;
-    padding-right: 12px;
-    padding-top: 12px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    outline: none; */
 
 /* صفحة الترجمه من الكلام الى الاشاره */
   .main-rtos-translation-stog textarea{
-    /* width: 625px;
-    height: 160px;
-    background-color: #D9D9D9;
-    border-radius: 8px;
-    position: relative;
-     resize: none;
-     border: 1px solid #ccc;
-     padding-right: 12px;
-    padding-top: 12px */
+  
      position: relative;
   }
   .main-rtos-translation-stog textarea{
-    width: 625px;
-    height: 160px;
+    width: 400px;
+    height: 80px;
     background-color: #D9D9D9;
     border-radius: 8px;
     position: relative;
@@ -1730,16 +1701,14 @@ input:checked + .slider:before {
 
   }
 #avatar-container {
- width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  overflow: hidden;
-    
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0 auto; /* يوسّطها في الصفحة */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* يوسّطها في الصفحة */
 }
 
 
@@ -1931,13 +1900,10 @@ input:checked + .slider:before {
     
 
 }
-.Watch-course{
-    background-color: white;
+
+.Watch-course iframe{
     width: 100%;
-    max-width: 800px;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
+    height: 150px;
 }
 .Course-description{
    width: 100%;
@@ -2009,6 +1975,10 @@ input:checked + .slider:before {
     color: white;
 }
       
+
+
+
+
 
 
 
@@ -2123,4 +2093,4 @@ input:checked + .slider:before {
   padding: 10px 20px;
   cursor: pointer;
 }
->>>>>>> 6406596 (upload project with git lfs)
+

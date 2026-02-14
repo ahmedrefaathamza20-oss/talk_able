@@ -27,7 +27,7 @@ scene.add(dirLight);
 const loader = new THREE.GLTFLoader();
 
 // جرّب واحد واحد
-const MODEL_PATH = "assets/models/avatar_style.glb";
+const MODEL_PATH = "assets/models/avatar_style2.glb";
  //const MODEL_PATH = "assets/models/ready_player_me_male_avatar__vrchatgame.glb";
 
 loader.load(
@@ -36,19 +36,31 @@ loader.load(
     console.log("✅ Avatar Loaded");
 
     const avatar = gltf.scene;
+// ضبط الحجم تلقائيًا
+const box = new THREE.Box3().setFromObject(avatar);
+const size = new THREE.Vector3();
+box.getSize(size);
+const maxDim = Math.max(size.x, size.y, size.z);
+const scale = 11  / maxDim;
+avatar.scale.set(scale, scale, scale);
 
-    // 🔴 إعدادات آمنة 100%
-   
-avatar.position.set(0, -1.1, 0); // عدّل الرقم حسب الشكل
-avatar.scale.set(3, 3, 3);
- // نزول بسيط
-// avatar.rotation.y = Math.P/2;
-    scene.add(avatar);
+// مركز الأفاتار جوه الدائرة
+const center = new THREE.Vector3();
+box.getCenter(center);
+avatar.position.sub(center);
+avatar.position.y += -0.2; // حرّكه شوية لفوق
+const focusPoint = new THREE.Vector3(0, 1.5, 0); // عدل y على حسب مكان الرأس تقريبًا
+camera.position.set(0, 2, 3); // مكان الكاميرا بعيد شوية
+camera.lookAt(focusPoint);
 
-    // 🔴 كاميرا بعيدة شوية
     
-camera.position.set(0, 0, 7);
-camera.lookAt(0, 0, 0);
+scene.add(avatar);
+
+
+
+    
+
+
   },
   undefined,
   function (error) {
