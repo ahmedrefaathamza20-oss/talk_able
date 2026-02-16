@@ -48,7 +48,7 @@
             </div>
             </div>
                   <!-- عملت ليها mainلوحدها عشان هي غير التانين -->
-                 <div class="main-rtos">
+                <div class="main-rtos">
   <div class="main-rtos-translation-stog">
     <textarea id="textInput" placeholder="اكتب النص هنا..."></textarea>
   </div>
@@ -57,18 +57,28 @@
     <button id="translateBtn">ترجمة</button>
   </div>
 
-  <div id="avatar-container"></div>
+  <div id="statusMessage"></div>
+
+  <!-- حاوية الأفاتار -->
+  <div id="avatar-wrapper">
+    <div id="avatar-ring">
+      <div id="avatar-container">
+        <!-- هنا three.js بيرسم الـcanvas -->
+      </div>
+
+      <!-- اللودينج -->
+      <div id="loader" class="loader hidden">
+        <div class="loader-circle"></div>
+        <div class="loader-dot"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- three.js -->
 <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
 <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
 
-<!-- كودك -->
 <script src="assets/js/speech-to-gesture.js"></script>
-
-
-
-
 </body>
 </html>

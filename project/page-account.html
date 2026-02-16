@@ -57,67 +57,73 @@
                         
                      </a>
              </div>
-             <div class="settings-container">
+          <div class="settings-container">
 
-  <!-- صورة المستخدم -->
-  <div class="profile-header">
-    <div class="avatar-wrapper">
-      <img id="avatarImg" src="avatar.png" alt="avatar">
-      <label class="edit-icon">
-        ✏️
+    <!-- صورة واسم المستخدم -->
+    <div class="profile-header">
+      <div class="avatar-wrapper">
+        <img id="avatarImg" src="assets/img/default-user.png" alt="avatar">
+
+        <label for="avatarInput" class="edit-icon">
+          <i class="fa-solid fa-pen"></i>
+        </label>
         <input type="file" id="avatarInput" hidden>
-      </label>
-    </div>
-
-    <h2 id="userNameText">محمد أحمد</h2>
-    <p id="userRoleText">نوع المستخدم: دعم فني</p>
-  </div>
-
-  <!-- بيانات الحساب -->
-  <div class="card">
-    <h3>معلومات الملف الشخصي</h3>
-
-    <div class="field">
-      <label>الاسم الكامل</label>
-      <div class="input-edit">
-        <input id="nameInput" type="text" disabled>
-        <span class="edit" data-edit="name">✏️</span>
       </div>
+
+      <h2 id="userNameText">اسم المستخدم</h2>
+      <p id="userRoleText">نوع المستخدم</p>
     </div>
 
-    <div class="field">
-      <label>البريد الإلكتروني</label>
-      <div class="input-edit">
-        <input id="emailInput" type="email" disabled>
-        <span class="edit" data-edit="email">✏️</span>
+    <!-- معلومات الحساب -->
+    <div class="card">
+
+      <h3>معلومات الملف الشخصي</h3>
+
+      <div class="field">
+        <label>الاسم الكامل</label>
+        <div class="input-edit">
+          <input id="nameInput" type="text" disabled>
+          <button type="button" class="edit" data-edit="name">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+        </div>
       </div>
+
+      <div class="field">
+        <label>البريد الإلكتروني</label>
+        <div class="input-edit">
+          <input id="emailInput" type="email" disabled>
+          <button type="button" class="edit" data-edit="email">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="saveProfile" disabled>حفظ التعديلات</button>
+      </div>
+
     </div>
 
-    <div class="actions">
-      <button id="saveProfile" disabled>حفظ التعديلات</button>
+    <!-- كلمة المرور -->
+    <div class="card">
+
+      <h3>الحماية</h3>
+
+      <div class="field">
+        <label>كلمة المرور الجديدة</label>
+        <input id="passwordInput" type="password" placeholder="أدخل كلمة المرور الجديدة">
+      </div>
+
+      <div class="actions">
+        <button id="changePassword">تغيير كلمة المرور</button>
+      </div>
+
     </div>
-  </div>
 
-  <!-- كلمة المرور -->
-  <div class="card">
-    <h3>الحماية</h3>
-
-    <div class="field">
-      <label>كلمة المرور الجديدة</label>
-      <input id="passwordInput" type="password">
-    </div>
-
-    <button id="changePassword">تغيير كلمة المرور</button>
   </div>
 
 </div>
-
-
-                 
-         </div>
-
-      
-    </div>
     
         <script src="assets/js/page-account.js"></script>
     </body>

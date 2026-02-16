@@ -2063,10 +2063,11 @@ input:checked + .slider:before {
 }
 
 .card {
-  background: #fff;
+    
+  background: #a92e2e;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .field {
